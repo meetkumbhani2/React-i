@@ -1,20 +1,16 @@
 import React from 'react'
 
-const CardDetails = ({ children }) => {
+const CardDetails  = (props) => {
   return (
     <>
-      <div className="model">
-        <img src={children.Poster} alt="" />
-        <p>{children.Title}</p>
-        <p>Year: {children.Year}</p>
-        <button
-        >
-          {children.isFav ? "Already Liked" : "Wanna Like"}
-        </button>
-      </div>
+    <div className="model">
+      <img src={props.img} alt="" /> 
+      <p>{props.title}</p>
+      <p>Year: {props.year}</p>
+    </div>
 
-    </>
+     </>
   )
 }
 
-export default CardDetails
+export default CardDetails;
